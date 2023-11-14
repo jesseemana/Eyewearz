@@ -1,0 +1,24 @@
+{
+    "glasses": [
+        {
+            "image": "./glasses1.webp",
+            "name": "Prescription glasses",
+            "price": "MWK30,000"
+        },
+        {
+            "image": "./glasses2.webp",
+            "name": "Prescription glasses",
+            "price": "MWK30,000"
+        },
+        {
+            "image": "./glasses3.webp",
+            "name": "Prescription glasses",
+            "price": "MWK40,000"
+        },
+        {
+            "image": "./glasses4.jpg",
+            "name": "Prescription glasses",
+            "price": "MWK45,000"
+        }
+    ]
+}
