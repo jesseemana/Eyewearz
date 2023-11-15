@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export type GlassProps = {
+  id: number
   name: string
   price: string
   image: string
@@ -14,7 +15,7 @@ const Glasses = ({ glasses }: { glasses: GlassProps[] }) => {
       {glasses.map((glass, index) => (
       // navigate to glass page onclick 
       <Link
-        to={'/'}
+        to={`/product/${glass.id}`}
         key={index} 
         className='border rounded-md w-[250px] h-[230px] hover:shadow-lg hover:cursor-pointer hover:transition-all'
       >
