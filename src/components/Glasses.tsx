@@ -14,7 +14,7 @@ const Glasses = ({ glasses }: { glasses: GlassProps[] }) => {
       {glasses.map((glass, index) => (
       // navigate to glass page onclick 
       <Link
-        to={''}
+        to={'/'}
         key={index} 
         className='border rounded-md w-[250px] h-[230px] hover:shadow-lg hover:cursor-pointer hover:transition-all'
       >
