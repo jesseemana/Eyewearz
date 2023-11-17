@@ -1,24 +1,78 @@
 {
     "glasses": [
         {
+            "id": 1,
             "image": "./glasses1.webp",
-            "name": "Prescription glasses",
+            "name": "prescription glasses",
             "price": "MWK30,000"
         },
         {
+            "id": 2,
             "image": "./glasses2.webp",
-            "name": "Prescription glasses",
+            "name": "prescription glasses",
             "price": "MWK30,000"
         },
         {
+            "id": 3,
             "image": "./glasses3.webp",
-            "name": "Prescription glasses",
+            "name": "prescription glasses",
             "price": "MWK40,000"
         },
         {
-            "image": "./glasses4.jpg",
-            "name": "Prescription glasses",
+            "id": 4,
+            "image": "./glasses2.webp",
+            "name": "prescription glasses",
+            "price": "MWK40,000"
+        },
+        {
+            "id": 5,
+            "image": "./glasses1.webp",
+            "name": "prescription glasses",
             "price": "MWK45,000"
+        },
+        {
+            "id": 6,
+            "image": "./glasses4.jpg",
+            "name": "prescription glasses",
+            "price": "MWK45,000"
+        }
+    ],
+    "sunglasses": [
+        {
+            "id": 7,
+            "image": "./sunglasses1.jpg",
+            "name": "sunglasses",
+            "price": "MWK27,000"
+        },
+        {
+            "id": 8,
+            "image": "./sunglasses2.jpg",
+            "name": "fashion shades",
+            "price": "MWK20,000"
+        },
+        {
+            "id": 9,
+            "image": "./sunglasses3.jpg",
+            "name": "shades max",
+            "price": "MWK30,000"
+        },
+        {
+            "id": 10,
+            "image": "./sunglasses4.jpg",
+            "name": "prescription suglasses",
+            "price": "MWK38,000"
+        },
+        {
+            "id": 11,
+            "image": "./sunglasses5.jpg",
+            "name": "sunglasses",
+            "price": "MWK24,000"
+        },
+        {
+            "id": 12,
+            "image": "./sunglasses.jpg",
+            "name": "designer shades",
+            "price": "MWK35,000"
         }
     ]
 }
