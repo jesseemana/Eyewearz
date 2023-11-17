@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Container from './Container'
-import Glasses from './Glasses'
+import GlassesSwiper from './Swiper'
 
 const Explore = () => {
   const [glasses, setGlasses] = useState([])
@@ -28,7 +28,7 @@ const Explore = () => {
           Explore our wide range of eyewear. We may have what you're looking for.
         </p>
 
-        <Glasses glasses={glasses} />
+        <GlassesSwiper glasses={glasses} />
       </div>
     </Container>
   )
