@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Container from './Container'
 import ProductCard from './ProductCard'
+import { ProductProps } from '../types'
 
 const Explore = () => {
   const [glasses, setGlasses] = useState([])
@@ -19,7 +20,6 @@ const Explore = () => {
     getGlasses()
   }, [])
 
-
   return (
     <Container>
       <div className='flex flex-col items-center gap-4 py-'>
@@ -32,8 +32,8 @@ const Explore = () => {
       </div>
 
       <div className='grid grid-cols-2 md:grid-cols-3 place-items-center gap-10 py-5'>
-        {glasses.map(item => (
-          <ProductCard item={item} />
+        {glasses.map((item: ProductProps) => (
+          <ProductCard key={item.id} item={item} />
         ))}
       </div>
     </Container>
