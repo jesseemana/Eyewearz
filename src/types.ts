@@ -12,3 +12,8 @@ export interface Review {
   review: string
   content: string
 }
+
+export interface ItemProps {
+  image: string
+  title: string
+}
