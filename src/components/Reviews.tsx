@@ -8,10 +8,10 @@ const Reviews = () => {
     <section id='reviews'>  
       <Container>
         <div className='flex flex-col items-center gap-2 text-sm py-8'>
-          <h1 className='text-4xl font-semibold text-gray-800 capitalize'>
+          <h1 className='text-2xl lg:text-4xl font-semibold text-gray-800 capitalize'>
             what others are saying
           </h1>
-          <p className='text-gray-700 text-[18px]'>
+          <p className='text-gray-700 md:text-[18px] text-lg text-center'>
             Read what other satisified customers are saying about us.
           </p>
         </div>

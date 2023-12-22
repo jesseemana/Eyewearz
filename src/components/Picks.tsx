@@ -6,7 +6,7 @@ const Picks = () => {
   return (
     <section id='picks'>
       <Container>
-        <div className='grid lg:grid-cols-2 grid-rows-2 lg:grid-rows-none gap-2 p-2'>
+        <div className='grid md:grid-cols-2 grid-rows-2 md:grid-rows-none gap-2 p-2'>
           {picksData.map((item: ItemProps, index) => (
             <div 
               key={index} 

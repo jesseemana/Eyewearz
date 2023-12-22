@@ -10,7 +10,7 @@ const NewsLetter = () => {
           <h1 className='text-2xl lg:text-4xl font-semibold text-gray-800 capitalize text-center'>
             professional stylish glasses at affordable prices
           </h1>
-          <p className='text-sm text-gray-700 md:text-[18px] text-center'>
+          <p className='text-lg text-gray-700 md:text-[18px] text-center'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br/>
             Officia quis sint nulla perspiciatis dignissimos doloribus assumenda<br/>
             commodi dolore nobis fugit.
