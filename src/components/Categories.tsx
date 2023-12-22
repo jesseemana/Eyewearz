@@ -10,7 +10,11 @@ const Categories = () => {
           to={item.name} 
           className='flex flex-col items-center'
         >
-          <img src={item.image} alt={item.name} className='lg:h-40 h-20' />
+          <img 
+            src={item.image} 
+            alt={item.name} 
+            className='lg:h-40 h-20' 
+          />
           <p className='capitalize font-semibold text-gray-800'>{item.name}</p>
         </Link>
       ))}
