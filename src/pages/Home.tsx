@@ -1,14 +1,24 @@
 import React from 'react'
-import Explore from '../components/Explore'
 import Hero from '../components/Hero'
-import Navbar from '../components/Navbar'
+import Picks from '../components/Picks'
+import Promo from '../components/Promo'
+import Header from '../components/Header'
+import Explore from '../components/Explore'
+import Reviews from '../components/Reviews'
+import Categories from '../components/Categories'
+import NewsLetter from '../components/NewsLetter'
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
+      {/* <Hero /> */}
+      <Header />
+      <Categories />
       <Explore />
+      <Picks />
+      <Reviews />
+      <Promo />
+      <NewsLetter />
     </>
   )
 }
