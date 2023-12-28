@@ -11,7 +11,7 @@ const Explore = () => {
     async function getGlasses() {
       try {
         setLoading(true)
-        const results = await fetch('http://localhost:3030/sunglasses')
+        const results = await fetch('http://localhost:3030/api/products')
         const glasess =  await results.json()
         setGlasses(glasess)
       } catch (error: unknown) {
@@ -23,6 +23,7 @@ const Explore = () => {
     getGlasses()
   }, [])
 
+  console.log(glasses)
 
   return (
     <section id='explore'>
@@ -35,10 +36,11 @@ const Explore = () => {
             Explore our wide range of eyewear. We may have what you're looking for.
           </p>
         </div>
+
        {loading ? <p>loading...</p> :
         <div className='grid grid-cols-2 md:grid-cols-3 place-items-center gap-10 py-5'>
           {glasses.map((item: ProductProps) => (
-            <ProductCard item={item} key={item.id} />
+            <ProductCard item={item} key={item._id} />
           ))}
         </div>}
       </Container>
