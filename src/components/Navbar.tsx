@@ -8,11 +8,11 @@ const Navbar = () => {
   return (
     <nav className='shadow-sm'>
       <Container>
-        <div className='flex justify-between py-4 items-center'>
+        <div className='flex justify-between py-5 items-center'>
           <Link to={'/'}>
             <h1 className='capitalize font-bold text-gray-800'>Logo</h1>
           </Link>
-          <div className='lg:flex gap-4 items-center capitalize font-semibold text-gray-800 hidden'>
+          <div className='lg:flex gap-4 items-center capitalize font-normal text-gray-800 hidden'>
             <Link to={'/eyeglasses'} className="navbar-brand">eyeglasses</Link>
             <Link to={'/sunglasses'} className="navbar-brand">sunglasses</Link>
             <Link to={'/tests'} className="navbar-brand">eye tests</Link>
