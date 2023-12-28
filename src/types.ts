@@ -1,9 +1,10 @@
 export type ProductProps = {
-  id: number
+  _id: string
   name: string
   price: string
   image: string
-  reviews: number
+  gender: number
+  description: number
 }
 
 export interface Review {
