@@ -40,6 +40,7 @@ const NewsLetter = () => {
             <Socials />
           </div>
         </div>
+        <hr />
       </Container>
     </section>
   )
