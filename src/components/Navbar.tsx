@@ -19,7 +19,7 @@ const Navbar = () => {
             <Link to={'/'} className="navbar-brand">store</Link>
             <Link to={'/'} className="navbar-brand">deals</Link>
           </div>
-          <div className='flex items-center gap-5 text-gray-500'>
+          <div className='flex items-center gap-5 text-gray-800'>
             <BiSearch size={20} className='hover:cursor-pointer' />
             <BiUser size={20} className='hover:cursor-pointer' />
             <BiHeart size={20} className='hover:cursor-pointer' />
