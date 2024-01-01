@@ -1,28 +1,28 @@
 import React from 'react'
 import Socials from './Socials'
 import Container from './Container'
-import Benefits, { BenefitsTypes } from './Benefits'
 import { FaShieldAlt } from 'react-icons/fa'
 import { CiLocationOn } from 'react-icons/ci'
+import Benefits, { BenefitsTypes } from './Benefits'
 import { 
   AiFillMessage, 
-  AiOutlineMessage, 
-  AiFillDollarCircle, 
   AiOutlineMail, 
   AiOutlinePhone, 
+  AiOutlineMessage, 
+  AiFillDollarCircle, 
 } from 'react-icons/ai'
 
 const Footer = () => {
   return (
     <footer className='bg-gray-100 py-8'>
       <Container>
-        <div className='grid mb-8 grid-cols-3'>
+        <div className='flex mb-8 justify-between flex-col md:flex-row gap-5'>
           {benefits.map((item, index) => (
             <Benefits key={index} benefits={item} />
           ))}
         </div>
         <hr />
-        <div className='grid grid-cols-4 py-5'>
+        <div className='flex py-5 justify-between flex-wrap gap-4'>
           {/* Shop */}
           <div className='flex flex-col gap-3'>
             <h1 className='font-bold capitalize text-gray-900'>shop</h1>
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
           {/* Contact */}
           <div className='flex flex-col gap-3'>
-            <h1 className='font-bold capitalize text-gray-900'>contact</h1>
+            <h1 className='font-bold capitalize text-gray-900 '>contact</h1>
             <div className=''>
               <div className='flex items-center gap-2 text-gray-600'>
                 <AiOutlinePhone />
@@ -98,18 +98,18 @@ export default Footer
 export const benefits: BenefitsTypes[] = [
   {
     title: '60-day exchange and return',
-    icon: <AiFillDollarCircle size={40} className='fill-gray-700'/>,
+    icon: <AiFillDollarCircle size={40} className='fill-gray-400'/>,
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ullam?'
   },
   {
     title: '365-day warranty',
-    icon: <FaShieldAlt size={40} className='fill-gray-700'/>,
+    icon: <FaShieldAlt size={40} className='fill-gray-400'/>,
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ullam?',
-    styles: 'before:bg-gray-500 before:h-20 before:w-[3px] after:bg-gray-500 after:h-20 after:w-[2px]'
+    styles: 'md:border-x-2 p-1 border-gray-400'
   },
   {
     title: 'live chat 24/7',
-    icon: <AiFillMessage size={40} className='fill-gray-700'/>,
+    icon: <AiFillMessage size={40} className='fill-gray-400'/>,
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ullam?'
   },
 ]

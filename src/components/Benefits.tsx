@@ -10,10 +10,10 @@ export interface BenefitsTypes {
 const Benefits = ({ benefits }: { benefits: BenefitsTypes }) => {
   const { title, icon, desc, styles } = benefits
   return (
-    <div className={`flex items-center gap-2 w-[400px] ${styles}`}>
+    <div className={`flex items-center gap-2 ${styles}`}>
       <>{icon}</>
       <div>
-        <p className='text-gray-700 font-bold capitalize'>{title}</p>
+        <p className='text-gray-800 font-bold capitalize'>{title}</p>
         <p className='text-gray-700 text-sm'>{desc}</p>
       </div>
     </div>
