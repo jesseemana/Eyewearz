@@ -2,9 +2,9 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>
+    <header>
       <img src="./hero.webp" alt="" />
-    </div>
+    </header>
   )
 }
 
