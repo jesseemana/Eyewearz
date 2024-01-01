@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Loading from '../components/Loading'
 import Container from '../components/Container'
 
-const Male = () => {
+const BlueLight = () => {
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(false)
 
@@ -10,7 +10,7 @@ const Male = () => {
     const getGlasses = async () => {
       setLoading(true)
       try {
-        const response = await fetch('http://localhost:3030/api/products/filter?gender=male', {
+        const response = await fetch('http://localhost:3030/api/products/filter?category=prescription', {
           method: 'POST'
         })
         const data = await response.json()
@@ -28,9 +28,9 @@ const Male = () => {
 
   return (
     <Container>
-      <div>Male Shades</div>
+      <div>BlueLight</div>
     </Container>
   )
 }
 
-export default Male
+export default BlueLight
