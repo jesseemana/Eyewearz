@@ -40,9 +40,9 @@ const ProductCard = ({ item }: { item: ProductProps }) => {
           <div className='  flex flex-col gap-2'>
             <button 
               onClick={handleCart}
-              className='border-2 border-blue-500 text-blue-500 lg:px-2 lg:py-1 py-[4px] rounded-[4px] capitalize md:text-[16px] text-[14px] font-semibold'
+              className='border border-blue-500 text-blue-500 lg:px-4 lg:py-1 py-[4px] rounded-[4px] capitalize md:text-[16px] text-[14px] font-normal'
             >
-              add to cart
+              select
             </button>
             {/* <p className='text text-gray-400 text-sm'>{reviews} reviews</p> */}
           </div>
