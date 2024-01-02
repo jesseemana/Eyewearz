@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .before-styles {
+        @apply before:content-["•"] before:text-blue-500 before:text-xl before:mr-1
+    }
+}
